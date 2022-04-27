@@ -1,14 +1,15 @@
 // import PropTypes from 'prop-types';
 
 const Profile = ({ username, tag, location, avatar, stats }) => {
+    console.log(avatar);
     return (
         <div class="profile">
             <div class="description">
-                {/* <img
+                <img
                     src={avatar}
-                    alt="User avatar"
-                    class="avatar"
-                /> */}
+                    // alt="User avatar"
+                    // class="avatar"
+                />
                 <p class="name">Petra Marica</p>
                 <p class="tag">@pmarica</p>
                 <p class="location">Salvador, Brasil</p>
