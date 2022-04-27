@@ -1,5 +1,5 @@
-// import Profile from 'components/social-profile/profile';
-// import user from 'components/social-profile/user.json';
+import Profile from 'components/social-profile/profile';
+import user from 'components/social-profile/user.json';
 
 import FriendList from 'components/friend-list/friendList';
 import friends from 'components/friend-list/friends.json';
@@ -22,16 +22,18 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      <FriendList
-        friends={friends}
-      />
-      {/* <Profile
+      <Profile
         username={user.username}
         tag={user.tag}
         location={user.location}
         avatar={user.avatar}
         stats={user.stats}
       />
+      <FriendList
+        friends={friends}
+      />
+
+      {/*
       <FriendList
         friends={friends}
       />
