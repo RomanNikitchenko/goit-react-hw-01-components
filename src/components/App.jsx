@@ -1,11 +1,11 @@
-import Profile from './social-profile/profile';
-import user from './social-profile/user.json';
+import Profile from 'components/social-profile/profile';
+import user from 'components/social-profile/user.json';
 
-import FriendList from './friend-list/friendList';
-import friends from './friend-list/friends.json';
+import FriendList from 'components/friend-list/friendList';
+import friends from 'components/friend-list/friends.json';
 
-import Statistics from './statistics/statisticsProps'
-import data from './statistics/data.json'
+import Statistics from 'components/statistics/statisticsProps'
+import data from 'components/statistics/data.json'
 
 
 
