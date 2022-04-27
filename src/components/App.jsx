@@ -1,5 +1,5 @@
-// import Profile from 'components/social-profile/profile';
-// import user from 'components/social-profile/user.json';
+import Profile from 'components/social-profile/profile';
+import user from 'components/social-profile/user.json';
 
 import FriendList from 'components/friend-list/friendList';
 import friends from 'components/friend-list/friends.json';
@@ -23,18 +23,13 @@ export const App = () => {
       }}
     >
       <Profile
-        username={user.username}
-        tag={user.tag}
-        location={user.location}
-        avatar={user.avatar}
-        stats={user.stats}
+        user={user}
       />
 
       <FriendList
         friends={friends}
       />
 
-    
       <Statistics title="Upload stats" stats={data} />
       <Statistics stats={data} /> 
 
