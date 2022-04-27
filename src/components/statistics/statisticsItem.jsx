@@ -1,7 +1,7 @@
 const StatisticsItem = ({ stats, title }) => {
     return (
         <section class="statistics">
-            {title && <h2 class="title">Upload stats</h2>}
+            {title && (<h2 class="title">Upload stats</h2>)}
 
             <ul class="stat-list">
                 <li class="item" key={stats[0].id}>
