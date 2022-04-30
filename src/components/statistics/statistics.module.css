@@ -1,11 +1,23 @@
-.statList{
+.statistics{
+    border: 1px solid;
+}
+
+.list{
     padding: 0;
     margin: 0;
     list-style: none;
     display: flex;
+    margin: 5px;
+}
+
+.title{
+    text-align: center;
 }
 
 .item{
     padding: 10px;
-    background-color: rgb(114, 201, 114);
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
