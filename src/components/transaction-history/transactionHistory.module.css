@@ -1,0 +1,28 @@
+.transaction {
+    box-shadow: 3px 7px 16px 18px rgba(0, 0, 0, 0.73);
+    -webkit-box-shadow: 3px 7px 16px 18px rgba(0, 0, 0, 0.73);
+    -moz-box-shadow: 3px 7px 16px 18px rgba(0, 0, 0, 0.73);
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.invoice{
+    background-color: rgb(201, 52, 52);
+}
+
+.payment {
+    background-color: rgb(42, 168, 42);
+}
+
+.withdrawal {
+    background-color: rgb(35, 35, 98);
+}
+
+.deposit {
+    background-color: rgb(231, 231, 59);
+}
+
+th,
+td{
+    padding: 10px 20px;
+}

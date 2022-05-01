@@ -7,6 +7,9 @@ import friends from 'components/friend-list/friends.json';
 import Statistics from 'components/statistics/statisticsProps';
 import data from 'components/statistics/data.json';
 
+import TransactionHistory from 'components/transaction-history/transactionHistory'
+import transactions from 'components/transaction-history/transactions.json';
+
 
 export const App = () => {
   return (
@@ -37,7 +40,9 @@ export const App = () => {
       <Statistics title="Upload stats" stats={data} />
       <Statistics stats={data} /> 
 
-      {/* Reac homework template */}
+      <TransactionHistory items={transactions} />
+
+      Reac homework template
     </div>
   );
 };
