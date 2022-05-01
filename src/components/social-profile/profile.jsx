@@ -1,20 +1,21 @@
 import PropTypes from 'prop-types';
+import s from 'components/social-profile/profile.module.css'
 
 const Profile = ({ username, tag, location, avatar, stats, followers, views, likes }) => {
     return (
-        <div className="profile">
-            <div className="description">
+        <div className={`${s.profile}`}>
+            <div className={`${s.description}`}>
                 <img
                     src={avatar}
                     alt="User avatar"
-                    className="avatar"
+                    className={`${s.avatar}`}
                 />
-                <p className="name">Petra Marica</p>
-                <p className="tag">@pmarica</p>
-                <p className="location">Salvador, Brasil</p>
+                <p className={`${s.name}`}>{username}</p>
+                <p className={`${s.tag}`}>@{tag}</p>
+                <p className={`${s.location}`}>{location}</p>
             </div>
 
-            <ul className="stats">
+            <ul className={`${s.stats}`}>
                 <li>
                     <span className="label">Followers</span>
                     <span className="quantity">1000</span>
