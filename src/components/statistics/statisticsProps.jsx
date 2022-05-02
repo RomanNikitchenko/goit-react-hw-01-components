@@ -2,26 +2,27 @@ import PropTypes from 'prop-types';
 import styles from './statistics.module.css';
 import StatisticsItem from './statisticsItem';
 
-const Statistics = ({ title, stats }) => (
-    <section className={styles.statistics}>
-        {title && <h2 className={styles.title}>{title}</h2>}
+const Statistics = ({ title="", stats }) => {
+    return (
+        <section className={styles.statistics}>
+            {title && <h2 className={styles.title}>{title}</h2>}
 
-        <ul className={styles.list}>
+            <ul className={styles.list}>
 
-            {stats.map(item =>  (
+                {stats.map(({ id, label, percentage }) => (
                     <StatisticsItem
-                        key={item.id}
-                        label={item.label}
-                        percentage={item.percentage}
+                        key={id}
+                        label={label}
+                        percentage={percentage}
                     />
-                )
-            )}
-        </ul>
-    </section>
-);
+                ))}
+            </ul>
+        </section>
+    )
+};
 
 Statistics.propTypes = {
-    title: PropTypes.oneOf(['Upload stats']),
+    title: PropTypes.string.isRequired,
     stats: PropTypes.arrayOf(PropTypes.shape({
         id: PropTypes.string.isRequired
     }))
