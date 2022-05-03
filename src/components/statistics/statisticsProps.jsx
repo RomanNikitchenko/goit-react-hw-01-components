@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styles from './statistics.module.css';
 import StatisticsItem from './statisticsItem';
 
-const Statistics = ({ title="", stats }) => {
+const Statistics = ({ title, stats }) => {
     return (
         <section className={styles.statistics}>
             {title && <h2 className={styles.title}>{title}</h2>}
@@ -22,7 +22,7 @@ const Statistics = ({ title="", stats }) => {
 };
 
 Statistics.propTypes = {
-    title: PropTypes.string.isRequired,
+    title: PropTypes.string,
     stats: PropTypes.arrayOf(PropTypes.shape({
         id: PropTypes.string.isRequired
     }))

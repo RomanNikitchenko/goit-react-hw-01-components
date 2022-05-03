@@ -31,9 +31,6 @@ export const App = () => {
         location={user.location}
         avatar={user.avatar}
         stats={user.stats}
-        followers={user.stats.followers}
-        views={user.stats.views}
-        likes={user.stats.likes}
       />
 
       <FriendList
@@ -41,7 +38,7 @@ export const App = () => {
       />
 
       <Statistics title="Upload stats" stats={data} />
-      {/* <Statistics stats={data} />  */}
+      <Statistics stats={data} /> 
 
       <TransactionHistory items={transactions} />
 

@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types';
 import s from 'components/social-profile/profile.module.css'
 
-const Profile = ({ username, tag, location, avatar, stats, followers, views, likes }) => {
+const Profile = ({ username, tag, location, avatar, stats }) => {
+    const { followers, views, likes } = stats;
+    
     return (
         <div className={`${s.profile}`}>
             <div className={`${s.description}`}>
